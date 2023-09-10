@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Projects.css">
+    <title>MD MEHRABUL ISLAM ZESHAN</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><h1 class="text-white size ml-2"><span class="font-bold">MD</span> <span class="font-bold">M</span><span class=" ">EHRABUL</span><span class="font-bold"> I</span><span class="">SLAM</span><span class="font-bold"> Z</span><span class="">ESHAN</span></h1></a>
+            </div>
+            <ul class="links text-white">
+                <li><a href="index.html" class="d-a">Home</a></li>
+                <li><a href="Resume.html" class="d-a">Resume</a></li>
+                <li><a href="Projects.html" class="d-a active">Projects</a></li>
+                <li><a href="Travel.html" class="d-a">Travel Blog</a></li>
+                <li><a href="Photography.html" class="d-a">Photography</a></li>
+            </ul>
+            <div class="toggle_btn mr-5">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu text-white">
+            <li><a href="index.html" class="d-a">Home</a></li>
+            <li><a href="Resume.html" class="d-a">Resume</a></li>
+            <li><a href="Projects.html" class="d-a active">Projects</a></li>
+            <li><a href="Travel.html" class="d-a">Travel Blog</a></li>
+            <li><a href="Photography.html" class="d-a">Photography</a></li>
+        </div>
+    </header>
+    <main>
+        <section id="project">
+            <!--heading--------------->
+            <div class="project-heading">
+              <span>Let's See My Work</span>
+              <h3>MY PROJECTS</h3>
+            </div>
+            <!--filter--------->
+            <ul class="portfolio-filter">
+              <li class="list portfolio-filter-active" data-filter="all">All</li>
+              <li class="list" data-filter="app">Frontend</li>
+              <li class="list" data-filter="appdesign">Backend</li>
+              <li class="list" data-filter="web">Website Designs</li>
+              <li class="list" data-filter="ai">Ui Ux Design</li>
+          </ul>
+          <!--container--------->
+          <div class="portfolio-container">
+            <!--1------------>
+            <a href="ecommerce-webstite-design_opt.webp" class="portfolio-box app" data-lightbox="work">
+              <img src="ecommerce-webstite-design_opt.webp" alt="">
+            </a>
+            <!--2------------>
+            <a href="how-to-design-a-website-21.png" class="portfolio-box app" data-lightbox="work">
+              <img src="how-to-design-a-website-21.png" alt="">
+            </a>
+            <!--3------------>
+            <a href="image3-21.webp" class="portfolio-box appdesign" data-lightbox="work">
+              <img src="image3-21.webp" alt="">
+            </a>
+            <!--4------------>
+            <a href="land-book-web-design-inspiration.png" class="portfolio-box web" data-lightbox="work">
+              <img src="land-book-web-design-inspiration.png" alt="">
+            </a>
+            <!--5------------>
+            <a href="前面 9. Ghostlamp.jpg" class="portfolio-box web" data-lightbox="work">
+              <img src="前面 9. Ghostlamp.jpg" alt="">
+            </a>
+            <!--6------------>
+            <a href="aaa6f0ac5501503db355ca97c1e6780b.jpg" class="portfolio-box ai" data-lightbox="work">
+              <img src="aaa6f0ac5501503db355ca97c1e6780b.jpg" alt="">
+            </a>
+          </div>
+          </section>
+    </main>
+    <footer class="footer-distributed">
+
+        <div class="footer-right">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                MD MEHRABUL ISLAM ZESHAN
+            </p>
+
+            <p>Mew Mew &copy; 2023</p>
+        </div>
+
+    </footer>
+
+
+    <script src="Projects.js"></script>
+    <script src="https://kit.fontawesome.com/fb810baaea.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+    $(document).on('click', '.portfolio-filter li', function () {
+        $(this).addClass('portfolio-filter-active').siblings().removeClass('portfolio-filter-active');
+    });
+
+    /*portfolio-filter---------------------------------*/
+    $('.list').click(function () {
+        const value = $(this).attr('data-filter');
+        if (value == 'all') {
+            $('.portfolio-box').show('1000');
+        } else {
+            $('.portfolio-box').not('.' + value).hide('1000');
+            $('.portfolio-box').filter('.' + value).show('1000');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
