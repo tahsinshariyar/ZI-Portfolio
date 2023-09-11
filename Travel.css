@@ -139,7 +139,7 @@ header {
 }
 .text-box h1{
     color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 2px #fff;
 }
 
 
@@ -213,13 +213,13 @@ header {
     font-size: 40px;
     font-weight: 800;
 }
-.tour-content{
+/* .tour-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 3rem;
     margin-top: 5rem;
-}
+} */
 .box {
     position: relative;
 }
@@ -233,7 +233,7 @@ header {
 }
 .box h6{
     position: absolute;
-    left: 25px;
+    left: 55px;
     bottom: 95px;
     font-size: 22px;
     font-weight: 500;
@@ -241,7 +241,7 @@ header {
 }
 .box h4{
     position: absolute;
-    left: 25px;
+    left: 55px;
     bottom: 65px;
     font-size: 26px;
     font-weight: 700;
@@ -397,11 +397,35 @@ header {
     .size-2{
         font-size: 18px;
     }
-    .feature-content{
+    .holiday{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        grid-template-columns: repeat(1, 1fr);
         align-items: center;
+        gap: 10px;
+    }
+    .holiday-text{
+        padding-top: 10px;
         text-align: center;
-        gap: 1rem;
+    }
+    .box h6{
+        left: 155px;
+    }
+    .box h4{
+        position: absolute;
+        left: 155px;
+        bottom: 65px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .culture{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 10px;
+    }
+    .culture-text{
+        padding-top: 10px;
+        text-align: center;
     }
   }
