@@ -147,6 +147,26 @@ header {
 .my-click:hover{
     background-color: rgb(0, 183, 255);
 }
+
+/* about me */
+
+.resume-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ej-text-1{
+    font-size: 17px;
+    font-weight: bold;
+}
+.my-box{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.text{
+    margin: 0 50px;
+}
+
 /* CONECT */
 #contact{
     display: flex;
@@ -267,6 +287,9 @@ form .button-area{
     }
     header {
         background-position: right center;
+    }
+    .text{
+        margin: 0 50px;
     }
 
     /* CONTACT */
