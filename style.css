@@ -82,6 +82,19 @@ header {
 }
 /************ MAIN **********/
 
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    border: none; /* Remove border */
+    /* color: black; Set text color to black */
+  }
+  
+  .scroll-animation.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 /* HOME */
 .container{
     display: flex;
