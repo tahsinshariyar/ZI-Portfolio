@@ -472,8 +472,8 @@ i.fa-graduation-cap {
   height: 0;
   top: 60px;
   width: 300px;
-  background: rgba(12, 12, 12, 0.1);
-  z-index: 3;
+  background: rgba(12, 12, 12, 0.212);
+  z-index: 1000;
   -webkit-backdrop-filter: blur(11px);
           backdrop-filter: blur(11px);
   border-radius: 10px;
