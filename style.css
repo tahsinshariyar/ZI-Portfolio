@@ -6,7 +6,7 @@
 
 header {
     height: 100vh;
-    background-image: url(background-Recovered.png);
+    background-image: url(Images/background-Recovered.png);
     background-size: cover;
     background-position: center;
 }
@@ -114,7 +114,7 @@ header {
 .text-box h1{
     color: transparent;
     -webkit-text-stroke: 1px #fff;
-    background: url(back.png);
+    background: url(Images/back.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
